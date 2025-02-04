@@ -15,6 +15,7 @@ const isPrime = (num) => {
 };
 
 const isPerfect = (num) => {
+  if (num <= 0) return false; // Perfect numbers are positive integers
   let sum = 0;
   for (let i = 1; i < num; i++) {
     if (num % i === 0) sum += i;
@@ -32,7 +33,7 @@ app.get("/api/classify-number", async (req, res) => {
   const number = parseInt(req.query.number);
 
   if (isNaN(number)) {
-    return res.status(400).json({ number: "alphabet", error: true });
+    return res.status(400).json({ number: req.query.number, error: true });
   }
 
   // Determine properties
@@ -49,14 +50,18 @@ app.get("/api/classify-number", async (req, res) => {
     console.error("Error fetching fun fact:", error);
   }
 
+  // Calculate digit sum
+  const digitSum = Math.abs(number)
+    .toString()
+    .split("")
+    .reduce((sum, d) => sum + Number(d), 0);
+
   res.json({
     number,
     is_prime: isPrime(number),
     is_perfect: isPerfect(number),
     properties,
-    digit_sum: String(number)
-      .split("")
-      .reduce((sum, d) => sum + Number(d), 0),
+    digit_sum: digitSum,
     fun_fact,
   });
 });
