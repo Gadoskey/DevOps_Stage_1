@@ -4,8 +4,7 @@ This is a simple backend API built with **Node.js**, **Express**, and **Axios**.
 
 ## Author
 
-`Yusuf Mustapha Opeyemi`
-`[mustopha.yusufope@gmail.com]`
+Yusuf Mustapha Opeyemi `[mustopha.yusufope@gmail.com]`
 
 ## Features:
 - **Prime number check**
