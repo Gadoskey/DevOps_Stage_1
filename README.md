@@ -19,7 +19,7 @@ Yusuf Mustapha Opeyemi `[mustopha.yusufope@gmail.com]`
 Classifies a number and returns its properties.
 
 #### Query Parameters:
-- `number`: The number you want to classify (must be a valid integer).
+- `number`: The number you want to classify.
 
 #### Example Request:
 - `GET https://dev-ops-stage-1-g0r68n0zd-mustapha-opeyemis-projects.vercel.app/api/classify-number?number=28`
@@ -42,7 +42,7 @@ Classifies a number and returns its properties.
 - git clone `https://github.com/Gadoskey/DevOps_Stage_1.git`
 
 
-#### Navigate into proect directory:
+#### Navigate into project directory:
 - `cd api`
 
 #### Install Dependencies:
