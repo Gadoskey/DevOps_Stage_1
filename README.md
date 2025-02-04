@@ -40,7 +40,7 @@ Classifies a number and returns its properties.
 
 
 #### Installation:
-- `git clone https://github.com/Gadoskey/DevOps_Stage_1.git`
+- git clone `https://github.com/Gadoskey/DevOps_Stage_1.git`
 
 
 #### Navigate into proect directory:
@@ -52,7 +52,7 @@ Classifies a number and returns its properties.
 
 #### Run the Server Locally:
 - `node server.js`
-- ```The API will be available at http://localhost:3000/api/classify-number?number=<input_number>.```
+- The API will be available at `http://localhost:3000/api/classify-number?number=<input_number>.`
 
 
 #### Deployment
