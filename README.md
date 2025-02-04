@@ -4,7 +4,7 @@ This is a simple backend API built with **Node.js**, **Express**, and **Axios**.
 
 ## Author
 
-`[Yusuf Mustapha Opeyemi]`
+`Yusuf Mustapha Opeyemi`
 `[mustopha.yusufope@gmail.com]`
 
 ## Features:
